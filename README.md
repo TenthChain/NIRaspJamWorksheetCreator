@@ -44,7 +44,7 @@ pandoc \
 -V paper-size=A4 \
 --pdf-engine=wkhtmltopdf \
 --pdf-engine-opt="--footer-right" --pdf-engine-opt="Page [page] of [topage]" \
---css ~/github-markdown.css \
+--css ./github-markdown.css \
 -o Worksheet.pdf \
 Worksheet.md
 ```
@@ -62,6 +62,6 @@ Here's what's going on...
 - `-V paper-size=A4` setting wkhtmltopdf's output PDF paper size variable to A4,
 - `--pdf-engine=wkhtmltopdf` using "wkhtmltopdf" as the conversion engine,
 - `--pdf-engine-opt="--footer-right" --pdf-engine-opt="Page [page] of [topage]"` putting page number in bottom right corner,
-- `--css ~/github-markdown.css` apply "github-markdown.css" stylesheet when converting,
+- `--css ./github-markdown.css` apply "github-markdown.css" stylesheet when converting,
 - `-o Worksheet.pdf` output the file as "Worksheet.pdf,
 - `Worksheet.md` convert "Worksheet.md"
